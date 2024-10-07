@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+p {
+  color: white;
+}
+
+.icon {
+  color: white;
+  font-size: 27px;
+}/*# sourceMappingURL=grid-styles.css.map */

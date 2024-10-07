@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+p {
+  color: white;
+}
+
+.icon {
+  color: white;
+  font-size: 27px;
+}
+
+a::hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  top: 0;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  gap: 15px;
+}
+
+#header-name {
+  font-size: 20px;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.top-container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 58px;
+  border-radius: 50%;
+}
+
+.metrics-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resaltado {
+  font-size: 20px;
+}
+
+.text-normal {
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.buttons-container button {
+  background: rgb(65, 65, 65);
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.button-text {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.button-icon {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.bottom-nav {
+  background: black;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 0.1px solid rgba(205, 205, 205, 0.5);
+}
+
+.bottom-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 12px 30px;
+}/*# sourceMappingURL=styles.css.map */
