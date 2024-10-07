@@ -15,19 +15,38 @@ $padding-top-bottom: 5px
   justify-content: center
   align-items: center
 
+@mixin movil() 
+  @media screen and (min-width: 320px)
+
+@mixin tables()
+  @media screen and (min-width: 768px)
+
+@mixin desktop()
+  @media screen and ( min-width: 992px)
+
+@mixin desktop-big()
+  @media screen and (min-width: 1200px)
+
 
 *
   padding: 0
   margin: 0
   text-decoration: none
   color: white
-  font-family: "Roboto", sans-serif
+  font-family: "Nunito", sans-serif
 
 body
   background: black
 
 p
   color: white
+
+.main-body
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+
 
 .icon
   color: white
