@@ -1,5 +1,7 @@
-$border-style: .1px solid rgba(205, 205, 205,.5) 
+$border-style: .1px solid rgba(188, 188, 188, 0.237) 
 $padding-top-bottom: 5px
+$width-aside-full: 250px
+$width-aside-low: 80px
   
 @mixin fila($justify, $gap, $padding)
   display: flex
@@ -17,15 +19,19 @@ $padding-top-bottom: 5px
 
 @mixin movil() 
   @media screen and (min-width: 320px)
+    @content
 
 @mixin tables()
   @media screen and (min-width: 768px)
+    @content
 
 @mixin desktop()
-  @media screen and ( min-width: 992px)
+  @media screen and (min-width: 992px)
+    @content
 
 @mixin desktop-big()
   @media screen and (min-width: 1200px)
+    @content
 
 
 *
@@ -38,16 +44,25 @@ $padding-top-bottom: 5px
 body
   background: black
 
-p
+h1
+  font-weight: 600
+  font-size: 13px
+
+p, a
   color: white
+  font-size: 10px
+
+button
+  background: none
+  border: none
 
 .main-body
-  display: flex;
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
+  display: flex
+  position: fixed
+  overflow: hidden
+  width: 100%
 
 
 .icon
   color: white
-  font-size: 27px
+  font-size: 26px

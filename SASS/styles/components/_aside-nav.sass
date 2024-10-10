@@ -1,1 +1,39 @@
 @import './_general.sass'
+
+aside
+  width: auto
+  display: none
+  
+  @include tables()
+    display: block
+    width: 150px
+    
+  
+
+aside nav 
+  display: flex
+  flex-direction: column
+  gap: 40px
+  border-right: $border-style
+  padding: 15px 20px
+  height: auto
+  @include desktop()
+    padding: 20px 50px 20px 20px 
+
+
+.aside-section
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  gap: 10px
+
+.aside-item
+  display: flex
+  gap: 30px
+  align-items: center
+  padding: 10px 0
+  
+.aside-item p 
+  display: none
+  @include desktop()
+    display: block 
